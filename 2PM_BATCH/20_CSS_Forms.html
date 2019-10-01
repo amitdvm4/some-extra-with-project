@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url("img/desert_4.jpg");
+        }
+        .form-div{
+            background-color: rgba(0,240,0,0.3);
+            box-shadow: 0 0 10px black;
+            width: 250px;
+            text-align: center;
+            margin: 150px auto;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .fa-user-circle{
+            font-size: 100px;
+            margin-top: -70px;
+            color: limegreen;
+            box-shadow: 0 0 5px black;
+            border-radius: 50%;
+        }
+        .form-div h2{
+            margin-top: 15px;
+            font-size: 30px;
+        }
+        .input-field{
+            text-align: center;
+            font-size: 20px;
+            height: 35px;
+            width: 200px;
+            border: none;
+            outline: none;
+            margin: 5px;
+            background: transparent;
+            border-bottom: 3px solid darkgreen;
+        }
+        .input-field:focus{
+            border-bottom: 3px solid limegreen;
+        }
+        ::placeholder{
+            color: seagreen;
+        }
+        .submit-btn{
+            background-color: limegreen;
+            color: white;
+            font-size: 20px;
+            padding: 10px 25px;
+            margin: 15px 0 15px 0;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            width: 150px;
+            box-shadow: 0 0 5px black;
+        }
+        .submit-btn:hover{
+            box-shadow: 0 0 15px black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div animated flipInY">
+        <i class="fa fa-user-circle"></i>
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name" class="input-field">
+            <br>
+            <input type="password" placeholder="Password" class="input-field">
+            <br>
+            <input type="submit" value="Login" class="submit-btn">
+        </form>
+    </div>
+
+</body>
+</html>
